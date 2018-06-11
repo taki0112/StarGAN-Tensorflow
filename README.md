@@ -1,2 +1,6 @@
-# StarGAN-Tensorflow
-Simple Tensorflow implementation of StarGAN (CVPR 2018)
+<p align="center"><img width="40%" src="./assests/logo.jpg" /></p>
+
+--------------------------------------------------------------------------------
+
+## Author
+Junho Kim
