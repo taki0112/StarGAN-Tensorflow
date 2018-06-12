@@ -38,7 +38,7 @@ class StarGAN(object) :
         self.adv_weight = args.adv_weight
         self.rec_weight = args.rec_weight
         self.cls_weight = args.cls_weight
-        self.ld = args.GP_ld
+        self.ld = args.ld
 
         """ Generator """
         self.n_res = args.n_res

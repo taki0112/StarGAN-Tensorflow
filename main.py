@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument('--decay_epoch', type=int, default=10, help='decay epoch')
 
     parser.add_argument('--lr', type=float, default=0.0001, help='The learning rate')
-    parser.add_argument('--GP_ld', type=float, default=10.0, help='The gradient penalty lambda')
+    parser.add_argument('--ld', type=float, default=10.0, help='The gradient penalty lambda')
     parser.add_argument('--adv_weight', type=float, default=1, help='Weight about GAN')
     parser.add_argument('--rec_weight', type=float, default=10, help='Weight about Reconstruction')
     parser.add_argument('--cls_weight', type=float, default=10, help='Weight about Classification')
