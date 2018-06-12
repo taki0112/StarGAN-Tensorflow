@@ -28,7 +28,7 @@ def parse_args():
                         default=['Black_Hair', 'Blond_Hair', 'Brown_Hair', 'Male', 'Young'])
 
     parser.add_argument('--custom_label', type=int, nargs='+', help='custom label about selected attributes',
-                        default=[[1, 0, 0, 1, 0]])
+                        default=[1, 0, 0, 1, 0])
 
     parser.add_argument('--ch', type=int, default=64, help='base channel number per layer')
     parser.add_argument('--n_res', type=int, default=6, help='The number of resblock')
