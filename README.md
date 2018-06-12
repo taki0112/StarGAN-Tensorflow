@@ -35,7 +35,22 @@
 ### Test
 * python main.py --phase test 
 
+## Summary
+![overview](./assests/overview.PNG)
+
+## Architecture
+### Generator
+![generator](./assests/generator.PNG)
+
+### Discriminator
+![discriminator](./assests/discriminator.PNG)
+
 ## Results
+### Women
+![women](./assests/women.png)
+
+### Men
+![men](./assests/men.png)
 
 ## Author
 Junho Kim
