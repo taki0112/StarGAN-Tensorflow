@@ -34,6 +34,7 @@
 
 ### Test
 * python main.py --phase test 
+* The celebA test image and the image you wanted run simultaneously
 
 ### Pretrained model
 * Download [celebA_checkpoint](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-)
