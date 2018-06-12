@@ -38,13 +38,6 @@
 ## Summary
 ![overview](./assests/overview.PNG)
 
-## Architecture
-### Generator
-![generator](./assests/generator.PNG)
-
-### Discriminator
-![discriminator](./assests/discriminator.PNG)
-
 ## Results
 ### Women
 ![women](./assests/women.png)
