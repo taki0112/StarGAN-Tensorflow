@@ -41,7 +41,7 @@
 ## Summary
 ![overview](./assests/overview.PNG)
 
-## Results
+## Results (wgan-gp)
 ### Women
 ![women](./assests/women.png)
 
