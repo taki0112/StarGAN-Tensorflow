@@ -36,7 +36,7 @@
 * python main.py --phase test 
 
 ### Pretrained model
-* Download [celebA_checkpoint](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-) and move to `./checkpoint/`
+* Download [celebA_checkpoint](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-)
 
 ## Summary
 ![overview](./assests/overview.PNG)
