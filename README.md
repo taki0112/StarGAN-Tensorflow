@@ -18,10 +18,15 @@
 ```
 ├── dataset
    └── celebA
-       ├── 000001.jpg 
-       ├── 000002.jpg
-       └── ...
-       └── list_attr_celeba.txt (for attribute information) 
+       ├── train
+           ├── 000001.jpg 
+           ├── 000002.jpg
+           └── ...
+       ├── test
+           ├── a.jpg (The test image that you wanted)
+           ├── b.png
+           └── ...
+       ├── list_attr_celeba.txt (for attribute information) 
 ```
 
 ### Train
