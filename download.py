@@ -5,7 +5,7 @@ import requests
 
 from tqdm import tqdm
 
-parser = argparse.ArgumentParser(description='Download dataset for SAGAN')
+parser = argparse.ArgumentParser(description='Download dataset for StarGAN')
 parser.add_argument('dataset', metavar='N', type=str, nargs='+', choices=['celebA'],
                     help='name of dataset to download [celebA]')
 
