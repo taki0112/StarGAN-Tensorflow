@@ -5,7 +5,7 @@ import requests
 
 from tqdm import tqdm
 
-parser = argparse.ArgumentParser(description='Download dataset for StarGAN')
+parser = argparse.ArgumentParser(description='Download dataset for SAGAN')
 parser.add_argument('dataset', metavar='N', type=str, nargs='+', choices=['celebA'],
                     help='name of dataset to download [celebA]')
 
@@ -42,29 +42,38 @@ def save_response_content(response, destination, chunk_size=32 * 1024):
 
 def download_celeb_a(dirpath):
     data_dir = 'celebA'
-    if os.path.exists(os.path.join(dirpath, data_dir)):
-        print('Found Celeb-A - skip')
-        return
+    celebA_dir = os.path.join(dirpath, data_dir)
+    prepare_data_dir(celebA_dir)
 
-    filename, drive_id = "img_align_celeba.zip", "0B7EVK8r0v71pZjFTYXZWM3FlRnM"
-    save_path = os.path.join(dirpath, filename)
+    file_name, drive_id = "img_align_celeba.zip", "0B7EVK8r0v71pZjFTYXZWM3FlRnM"
+    txt_name, txt_drive_id = "list_attr_celeba.txt", "0B7EVK8r0v71pblRyaVFSWGxPY0U"
+
+    save_path = os.path.join(dirpath, file_name)
+    txt_save_path = os.path.join(celebA_dir, txt_name)
+
+    if os.path.exists(txt_save_path):
+        print('[*] {} already exists'.format(txt_save_path))
+    else:
+        download_file_from_google_drive(drive_id, txt_save_path)
 
     if os.path.exists(save_path):
         print('[*] {} already exists'.format(save_path))
     else:
         download_file_from_google_drive(drive_id, save_path)
 
-    zip_dir = ''
     with zipfile.ZipFile(save_path) as zf:
-        zip_dir = zf.namelist()[0]
-        zf.extractall(dirpath)
-    os.remove(save_path)
-    os.rename(os.path.join(dirpath, zip_dir), os.path.join(dirpath, data_dir))
+        zf.extractall(celebA_dir)
+
+    # os.remove(save_path)
+    os.rename(os.path.join(celebA_dir, 'img_align_celeba'), os.path.join(celebA_dir, 'train'))
+
+    custom_data_dir = os.path.join(celebA_dir, 'test')
+    prepare_data_dir(custom_data_dir)
 
 
 def prepare_data_dir(path='./dataset'):
     if not os.path.exists(path):
-        os.mkdir(path)
+        os.makedirs(path)
 
 
 if __name__ == '__main__':

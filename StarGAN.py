@@ -333,10 +333,10 @@ class StarGAN(object) :
                     fake_image = np.transpose(fake_images, axes=[1, 0, 2, 3, 4])[0] # [bs, c_dim, h, w, ch]
 
                     save_images(real_image, [1, 1],
-                                './{}/real_{:03d}_{:05d}.jpg'.format(self.sample_dir, epoch, idx+1))
+                                './{}/real_{:03d}_{:05d}.png'.format(self.sample_dir, epoch, idx+1))
 
                     save_images(fake_image, [1, self.c_dim],
-                                './{}/fake_{:03d}_{:05d}.jpg'.format(self.sample_dir, epoch, idx+1))
+                                './{}/fake_{:03d}_{:05d}.png'.format(self.sample_dir, epoch, idx+1))
 
                 if np.mod(idx + 1, self.save_freq) == 0:
                     self.save(self.checkpoint_dir, counter)
