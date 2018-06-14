@@ -5,10 +5,6 @@
 * Tensorflow 1.8
 * Python 3.6
 
-```python
-> python download.py celebA
-```
-
 ## Usage
 ### Downloading the dataset
 ```python
