@@ -22,7 +22,7 @@
            ├── a.jpg (The test image that you wanted)
            ├── b.png
            └── ...
-       ├── list_attr_celeba.txt (for attribute information) 
+       ├── list_attr_celeba.txt (For attribute information) 
 ```
 
 ### Train
@@ -33,7 +33,7 @@
 * The celebA test image and the image you wanted run simultaneously
 
 ### Pretrained model
-* Download [celebA_checkpoint](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-)
+* Download [checkpoint for 128x128](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-)
 
 ## Summary
 ![overview](./assests/overview.PNG)
