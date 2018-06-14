@@ -18,7 +18,7 @@
            ├── 000001.jpg 
            ├── 000002.jpg
            └── ...
-       ├── test
+       ├── test (It is not celebA)
            ├── a.jpg (The test image that you wanted)
            ├── b.png
            └── ...
