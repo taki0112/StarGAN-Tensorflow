@@ -45,5 +45,9 @@
 ### Men
 ![men](./assests/men.png)
 
+## Reference
+* [StarGAN paper](https://arxiv.org/abs/1711.09020)
+* [Author pytorch code](https://github.com/yunjey/StarGAN)
+
 ## Author
 Junho Kim
