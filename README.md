@@ -34,11 +34,15 @@
 
 ### Test
 * python main.py --phase test 
+* The celebA test image and the image you wanted run simultaneously
+
+### Pretrained model
+* Download [celebA_checkpoint](https://drive.google.com/open?id=1ezwtU1O_rxgNXgJaHcAynVX8KjMt0Ua-)
 
 ## Summary
 ![overview](./assests/overview.PNG)
 
-## Results
+## Results (128x128, wgan-gp)
 ### Women
 ![women](./assests/women.png)
 
