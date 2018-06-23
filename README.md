@@ -45,6 +45,12 @@
 ### Men
 ![men](./assests/men.png)
 
+## Related works
+* [CycleGAN-Tensorflow](https://github.com/taki0112/CycleGAN-Tensorflow)
+* [DiscoGAN-Tensorflow](https://github.com/taki0112/DiscoGAN-Tensorflow)
+* [UNIT-Tensorflow](https://github.com/taki0112/UNIT-Tensorflow)
+* [MUNIT-Tensorflow](https://github.com/taki0112/MUNIT-Tensorflow)
+
 ## Reference
 * [StarGAN paper](https://arxiv.org/abs/1711.09020)
 * [Author pytorch code](https://github.com/yunjey/StarGAN)
