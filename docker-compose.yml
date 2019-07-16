@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tensorflow:
+    image: slamhan/stargan-gpu:1.8.0-gpu-py3-jupyter
+    volumes:
+    - /notebooks:/notebooks
+    ports:
+    - 8888:8888/tcp
